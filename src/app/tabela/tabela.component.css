@@ -1,22 +1,25 @@
 .table{
-  display: flex;
   justify-content: center;
-  width: 100%;
+  display: flex;
   color: #011640;
 }
 
 .table2{
+  justify-content: center;
+  margin: auto;
   background-color: white;
   border: 6px solid #204C73;
   border-collapse: collapse;
   background: #FFFFF0;
- width: 50%;
+  width: 90%;
 }
 
 td {
   border: 0.5px solid black;
+  justify-content: center;
 
 }
+
 
 
 

@@ -10,14 +10,14 @@ import { UserService } from '../user.service';
 export class TabelaComponent implements OnInit {
   constructor( private userService: UserService){ }
 
-  user: Todo[] | any;
+  view: Todo[] | any;
 
   ngOnInit(): void  { this.viewUser();
   }
 
 
   viewUser(){
-    this.userService.GetUser().subscribe(user => this.user = user)
+    this.userService.GetUser().subscribe(user => this.view = user)
   }
 
 
