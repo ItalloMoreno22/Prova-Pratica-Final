@@ -10,11 +10,11 @@ export class UserService {
 
   constructor(private http: HttpClient) { }
 
-  private userUrl= 'https://jsonplaceholder.typicode.com/todos'
+  private ende= 'https://jsonplaceholder.typicode.com/todos'
 
 
   GetUser(): Observable<Todo[]>{
-  return this.http.get<Todo[]>(this.userUrl)
+  return this.http.get<Todo[]>(this.ende)
 
 }
 

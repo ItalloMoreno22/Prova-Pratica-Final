@@ -10,18 +10,13 @@ import { UserService } from '../user.service';
 export class TabelaComponent implements OnInit {
   constructor( private userService: UserService){ }
 
-  user?: Todo[] | any
+  user: Todo[] | any;
 
-  toDisplay = false;
-
-
-
-  ngOnInit(): void {
+  ngOnInit(): void  { this.viewUser();
   }
 
 
-  showUser(){
-    this.toDisplay = !this.toDisplay;
+  viewUser(){
     this.userService.GetUser().subscribe(user => this.user = user)
   }
 

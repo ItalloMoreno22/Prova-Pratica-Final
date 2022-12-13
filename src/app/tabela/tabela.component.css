@@ -1,0 +1,23 @@
+.table{
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  color: #011640;
+}
+
+.table2{
+  background-color: white;
+  border: 6px solid #204C73;
+  border-collapse: collapse;
+  background: #FFFFF0;
+ width: 50%;
+}
+
+td {
+  border: 0.5px solid black;
+
+}
+
+
+
+
