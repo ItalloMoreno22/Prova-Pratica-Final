@@ -1,1 +1,22 @@
-<p>tabela works!</p>
+
+
+<div *ngIf="toDisplay">
+
+    <table *ngFor="let User of user">
+
+      <div>
+        <p><b>UserId:</b> {{User.Userid}}</p>
+         <p><b>Id:</b> {{User.Id}} </p>
+         <p><b><Title></Title>:</b> {{User.Title}} </p>
+          <p><b>Completed:</b> {{User.company.completed}}</p>
+      </div>
+
+    </table>
+
+    <span>Total de Usuarios: {{user.length}} </span>
+
+
+  </div>
+
+
+

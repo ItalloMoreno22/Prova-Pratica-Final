@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { Todo } from '../interface';
+import { UserService } from '../user.service';
 
 @Component({
   selector: 'app-tabela',
@@ -6,10 +8,22 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./tabela.component.css']
 })
 export class TabelaComponent implements OnInit {
+  constructor( private userService: UserService){ }
 
-  constructor() { }
+  user?: Todo[] | any
+
+  toDisplay = false;
+
+
 
   ngOnInit(): void {
   }
+
+
+  showUser(){
+    this.toDisplay = !this.toDisplay;
+    this.userService.GetUser().subscribe(user => this.user = user)
+  }
+
 
 }
